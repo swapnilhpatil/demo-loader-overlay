@@ -1,5 +1,7 @@
 # 🎨 LoaderOverlay Demo
 
+![Hero Preview](./assets/hero-preview.png)
+
 Interactive demo app showcasing the [loader-overlay](https://www.npmjs.com/package/loader-overlay) React component.
 
 > A fully-featured React loader overlay — 5 animation types, full theme control, progress tracking, and **zero dependencies**.
