@@ -1,0 +1,94 @@
+/* ─── DEMO CARD ─── */
+.demo-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.demo-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.demo-card-preview {
+  position: relative;
+  height: 200px;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.demo-card-preview .preview-content {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.demo-card-body {
+  padding: 20px;
+}
+
+.demo-card-body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.demo-card-body p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.demo-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.tag-purple {
+  color: var(--purple);
+  border-color: var(--border-accent);
+  background: var(--bg-card);
+}
+
+.tag-green {
+  color: var(--green);
+  border-color: var(--border-accent);
+  background: var(--bg-card);
+}
+
+.tag-blue {
+  color: var(--blue);
+  border-color: var(--border-accent);
+  background: var(--bg-card);
+}
+
+.tag-amber {
+  color: var(--amber);
+  border-color: var(--border-accent);
+  background: var(--bg-card);
+}
+
+.tag-pink {
+  color: var(--pink);
+  border-color: var(--border-accent);
+  background: var(--bg-card);
+}
