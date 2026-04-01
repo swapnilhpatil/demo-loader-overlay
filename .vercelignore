@@ -1,0 +1,15 @@
+# Exclude documentation assets from build
+screenshots/
+
+# Dependencies
+node_modules/
+
+# Local env files
+.env*.local
+
+# Version control
+.git/
+.gitignore
+
+# Build output
+dist/
