@@ -1,10 +1,10 @@
 # 🎨 LoaderOverlay Demo
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://demo-loader-overlay.vercel.app/)
+
 ![Hero Preview](./screenshots/hero-section.png)
 
 Interactive demo app showcasing the [loader-overlay](https://www.npmjs.com/package/loader-overlay) React component.
-
-[**🚀 Live Demo**](https://demo-loader-overlay.vercel.app/)
 
 > A fully-featured React loader overlay — 5 animation types, full theme control, progress tracking, and **zero dependencies**.
 
