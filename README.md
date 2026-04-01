@@ -4,7 +4,7 @@
 
 Interactive demo app showcasing the [loader-overlay](https://www.npmjs.com/package/loader-overlay) React component.
 
-[**🚀 Live Demo**](https://loader-overlay-demo.vercel.app/)
+[**🚀 Live Demo**](https://demo-loader-overlay.vercel.app/)
 
 > A fully-featured React loader overlay — 5 animation types, full theme control, progress tracking, and **zero dependencies**.
 
