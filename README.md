@@ -1,26 +1,35 @@
 # 🎨 LoaderOverlay Demo
 
-![Hero Preview](./assets/hero-preview.png)
+![Hero Preview](./screenshots/hero-section.png)
 
 Interactive demo app showcasing the [loader-overlay](https://www.npmjs.com/package/loader-overlay) React component.
+
+[**🚀 Live Demo**](https://loader-overlay-demo.vercel.app/)
 
 > A fully-featured React loader overlay — 5 animation types, full theme control, progress tracking, and **zero dependencies**.
 
 ## ✨ Features Demonstrated
 
-- **5 Animation Types** — Spinner, Dots, Pulse, Ring, and Bar
-- **5 Overlay Variants** — Dark, Light, Blur, Transparent, and Gradient
-- **Progress Tracking** — Animated shimmer progress bar
-- **Closable Overlays** — Dismiss via ✕ button or outside clickgit 
-- **Interactive Playground** — Configure every prop in real-time
-- **API Reference** — Full props table with types and defaults
+- **5 Animation Types** — Spinner, Dots, Pulse, Ring, and Bar.
+- **5 Overlay Variants** — Dark, Light, Blur, Transparent, and Gradient.
+- **Progress Tracking** — Animated shimmer progress bar for long-running tasks.
+- **Flexible Dismissal** — Dismiss via ✕ button, outside click, or automatic timeout.
+- **Interactive Playground** — Configure every prop in real-time to see visual changes.
+- **Full Customization** — Control colors, sizes, blur intensity, and more.
+- **Custom Content** — Replace default icons with any React element using `children`.
+
+## 📸 Visual Tour
+
+### Demos
+![Demos](./screenshots/demos.png)
+
+### Interactive Playground
+![Playground](./screenshots/playground.png)
+
+### Comprehensive API Reference
+![API Reference](./screenshots/api-reference.png)
 
 ## 🚀 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v16 or later)
-- npm (v7 or later)
 
 ### Installation
 
@@ -41,14 +50,7 @@ npm run dev
 
 Opens the app at [http://localhost:5173](http://localhost:5173).
 
-### Production Build
-
-```bash
-npm run build
-npm run preview
-```
-
-## 📦 Quick Start with `loader-overlay`
+## 📦 Using `loader-overlay` in your project
 
 ```bash
 npm i loader-overlay
@@ -57,18 +59,25 @@ npm i loader-overlay
 ```jsx
 import LoaderOverlay from 'loader-overlay';
 
-<LoaderOverlay
-  show={loading}
-  type="spinner"
-  variant="dark"
-  fullScreen
-/>
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  return (
+    <LoaderOverlay
+      show={loading}
+      type="spinner"
+      variant="blur"
+      message="Processing..."
+      fullScreen
+    />
+  );
+}
 ```
 
-## 🎛️ Available Props
+## 🎛️ Complete API Reference
 
 | Prop | Type | Default | Description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | `show` | `boolean` | `true` | Controls overlay visibility |
 | `type` | `'spinner' \| 'dots' \| 'pulse' \| 'ring' \| 'bar'` | `'spinner'` | Loader animation type |
 | `size` | `'sm' \| 'md' \| 'lg' \| 'xl'` | `'md'` | Size of the loader |
@@ -77,6 +86,7 @@ import LoaderOverlay from 'loader-overlay';
 | `message` | `string` | `'Loading...'` | Primary status text |
 | `submessage` | `string` | `''` | Secondary info text |
 | `fullScreen` | `boolean` | `false` | Fixed to viewport vs parent |
+| `zIndex` | `number` | `999` | CSS z-index value |
 | `blur` | `number` | `8` | Backdrop blur in px |
 | `showProgress` | `boolean` | `false` | Show progress bar |
 | `progress` | `number` | `0` | Progress value 0–100 |
@@ -86,11 +96,22 @@ import LoaderOverlay from 'loader-overlay';
 | `animateIn` | `boolean` | `true` | Fade-in animation on mount |
 | `children` | `ReactNode` | `null` | Custom content replacing icons |
 
+## ☁️ Deployment
+
+### Vercel
+This project is optimized for deployment on Vercel.
+
+1.  Push your code to GitHub.
+2.  Import the repository into Vercel.
+3.  The `vercel.json` already handles client-side routing.
+4.  The `screenshots/` directory is automatically excluded from the production build via `.vercelignore`.
+
 ## 🛠️ Tech Stack
 
 - **React 18** — UI library
 - **Vite 5** — Build tool & dev server
-- **loader-overlay** — The component being demonstrated
+- **TypeScript** — Type safety
+- **loader-overlay** — The core component
 
 ## 👤 Author
 
